@@ -4,6 +4,10 @@ public class SnakeLadder{
 	
 		int startPosition=0;
 		System.out.println(startPosition);
+		
+		int dice=(int)(Math.random()*6+1);
+		System.out.println("Dice no: " + dice);
+		
 	}
 
 }
