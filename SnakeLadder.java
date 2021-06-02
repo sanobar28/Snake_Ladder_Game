@@ -3,11 +3,8 @@ import java.util.Random;
 
 public class SnakeLadder{
 
-	public static final int LADDER=1; 
-	public static final int SNAKE=2;
-	public static final int COUNTER=99;
-	
-	
+
+	public static final int COUNTER=100;
 	
 	public static void main(String[] args){
 	
@@ -17,7 +14,7 @@ public class SnakeLadder{
 
 		//System.out.println("Dice no: " + dice);
 			
-		while (playerPos < COUNTER){
+		while (playerPos <= COUNTER){
 				
 				numOfPlay++;
 				int dice=(int)(Math.random()*6+1);
@@ -32,12 +29,12 @@ public class SnakeLadder{
 				else if (snake == true){
 					playerPos -= dice;
 				}
-					
+				System.out.println("player position: " + playerPos);
 			}
 			
 			
 		System.out.println("Number of plays: " + numOfPlay);
-		System.out.println("player position: " + playerPos);
+		
 			
 	}
 			
